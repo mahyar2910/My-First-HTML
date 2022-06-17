@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+.jumbotron {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #4B8673;
+    text-align: center;
+    color: white;
+ }
+ 
+ * {
+   box-sizing: border-box;
+}
+header {
+   display: inline;
+}
+
+ #content {
+    float: left;
+    width: 65%;
+    text-align: justify;
+  }
+  aside {
+    float: right;
+    width: 35%;
+    padding-left: 10px;
+  }
+
+  nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+ }
+ nav {
+    background-color: #4B8673;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+ }
+
+ nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: black;
+}
+nav a:hover {
+   font-weight: bold;
+}
+.button {
+   flex-basis: 20%;
+  
+   /* properti pendukung */
+   text-align: center;
+   padding: 1px;
+   margin-top: 20px;
+   border: 1px solid white;
+   background-color:  #F6FBF4;
+   cursor: pointer;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.featured-image {
+    width: 65%;
+    max-height: 500px;
+    object-fit: scale-down;
+    object-position: center;
+}
+.profile img {
+    width: 150px;
+ }
+.profile table img{
+   width: 50px;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+ }
+ h2, h3 {
+    color: #4B8673
+ }
+ .profile header {
+    text-align: center;
+ }
+.profile section {
+   text-align: left;
+
+}
+
+ footer {
+    padding: 5px;
+    color: white;
+    background-color: #4B8673;
+    text-align: center;
+    font-weight: bold;
+ }
+ .tombol-menu {
+   position: absolute;
+   top: 1.7rem;
+   right: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 20px;
+}
+
+.tombol-menu .garis {
+   height: 3px;
+   background-color: #F6FBF4;
+}
+
+ @media screen and (max-width: 1000px) {
+    #content, 
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .logo a {
+      display: inline;
+  }
+  .tombol-menu {
+      display: flex;
+  }
+  nav .menu {
+      display: none;
+      padding: 10px;
+  }
+  nav .menu.active {
+      display: flex;
+  }
+  nav ul li {
+      width:100%;
+      border-bottom:1px solid #333333;
+  }
+}
